@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  tasks:
+    - my_docker_container:
+        name: salsa
+        image: docker-whale
+        cleanup: yes
+        detach: yes  
+
+
+
